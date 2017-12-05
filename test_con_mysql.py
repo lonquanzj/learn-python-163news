@@ -3,7 +3,7 @@ import MySQLdb
 con = MySQLdb.connect(
     host='119.23.13.34',
     user='news',
-    passwd='lovedbp4',
+    passwd='meiyoumima',
     port=3306,
     db='newsdb',
     charset='utf8'
