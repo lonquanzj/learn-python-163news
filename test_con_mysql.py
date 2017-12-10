@@ -8,7 +8,7 @@ con = MySQLdb.connect(
     db='newsdb',
     charset='utf8'
     )
-
+#执行查询前， 需要先获取cursor
 cursor = con.cursor()
 cursor.execute('SELECT * FROM `news`')
 rest = cursor.fetchone()

@@ -36,6 +36,7 @@ class MysqlSearch(object):
         cursor = self.conn.cursor()
         # 执行SQL
         cursor.execute(sql, ('百家', ))
+        #获取dir(cursor): 获取cursor所有方法
         # print(dir(cursor))
         # 拿到结果
         rest = dict(zip([k[0] for k in cursor.description], cursor.fetchone()))
